@@ -12,10 +12,7 @@
     <?php
     include "koneksi.php";
 
-    $sql1 = "SELECT * FROM article";
-$hasil1 = $conn->query($sql1);
-$total_records = $hasil1->num_rows;
-
+    
 
     $hlm = (isset($_POST['hlm'])) ? $_POST['hlm'] : 1;
 $limit = 3;
